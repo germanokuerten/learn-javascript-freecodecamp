@@ -321,3 +321,282 @@ let firstName3 = "Germano"
 let thirdLetterofLastName = firstName3[2]
 
 console.log(thirdLetterofLastName)
+
+
+// Bracket Notation to Find Last Character in String
+
+let firstName4 = "Germano"
+let lastLetterofFirstName = firstName4[firstName4.length -1]
+
+console.log(lastLetterofFirstName)
+console.log(firstName4[firstName4.length -1])
+
+
+// Bracket Notation to Find Nth-to-Last Character in String
+
+let firstName5 = "Germano"
+let lastLetterofFirstName2 = firstName5[firstName5.length -2]
+
+console.log(lastLetterofFirstName2)
+
+
+////////////////
+// Word Blanks
+////////////////
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb, test) {
+    let result = "";
+    result += `The ${myAdjective} ${myNoun} ${myVerb} to the store ${myAdverb} ${test}`
+    return result; 
+}
+
+console.log(wordBlanks('dog', 'big', 'ran', 'quickly', 'test string'))
+
+
+////////////////
+// Array
+////////////////
+
+// Can be any data type
+// each value is called an element
+let ourArray = ['Mano', 34]
+
+
+////////////////
+// Nested Array
+////////////////
+
+let nesterdArray = [['Mano', 1], ['Joe', 5, ['Deh', 7]]]
+
+
+////////////////
+// Access Array
+////////////////
+
+let arrayIndex = ourArray[0]
+console.log(arrayIndex)
+
+
+// You don't need to use let, or const to declare an array variable
+newArray = ['mano']
+console.log(newArray[0])
+
+
+////////////////
+// Modify Array Data
+////////////////
+
+arrayTest1 = [12,31,45]
+arrayTest1[0] = 5
+console.log('arrayTest1 is: ' +  arrayTest1)
+
+//////////////////////////////////////////////
+// Access Multi dimensional Arrays w/ Indexes
+//////////////////////////////////////////////
+
+// You can use bracket notation to access arrays and multi dimensional arrays.
+
+let arrayTest2 = [[1,2,3], [3,4,5]]
+console.log('access nested array: ' + arrayTest2[1][2])
+
+/////////////////////////////
+// Array methods
+/////////////////////////////
+
+////////////////
+// push()
+////////////////
+
+// Append Data to the end of an Array
+
+let pushArray = [['Jon', 23], ['cat', 2]]
+pushArray.push(['dog', 3])
+
+console.log(pushArray);
+
+pushArray.push(5)
+console.log(pushArray)
+
+////////////////
+// pop()
+////////////////
+
+// Removes the last element of array
+
+popArray = [1,2,3]
+popArray.pop()
+console.log('popped array: ' + popArray);
+
+
+////////////////
+// shift()
+////////////////
+
+// removes the first element of array
+
+shiftArray = [1,2,3]
+console.log(shiftArray.shift())
+console.log(shiftArray)
+
+
+////////////////
+// unshift()
+////////////////
+
+// adds element to the beggining of an array
+
+
+let unshiftArray = [1,2,3]
+unshiftArray.unshift(0)
+console.log(unshiftArray);
+
+
+//////////////////
+// Shopping List (an array)
+//////////////////
+
+
+
+////////////////////////////////////
+
+//////////////////
+// Reusable Code (Write Reusable Functions)
+//////////////////
+
+
+function helloMundao() {
+    console.log('hello mundão')
+}
+helloMundao()
+
+function Test(a, b, c) {
+    console.log(a, b, c)
+}
+Test(1,2,3)
+
+newVar1 = 5
+console.log(newVar1);
+
+
+//////////////////
+// Arguments
+//////////////////
+
+
+
+///////////////////////////////
+// Global Scope and Functions
+///////////////////////////////
+
+
+
+///////////////////////////////
+// Local Scope and Functions
+///////////////////////////////
+
+
+
+///////////////////////////////////////////
+// Global vs. Local Scope in Functions
+///////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////
+// Return a Value from a Function with Return
+/////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////
+// Understanding Undefined Value Returned from a Function
+/////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////
+// Assignment with a Returned Value
+///////////////////////////////////////
+
+
+
+
+processed = 2+1-1-2+3*2/2
+console.log('processed: '+ processed)
+
+
+////////////////////
+// Stand in Line
+////////////////////
+
+
+
+////////////////////
+// Boolean Values
+////////////////////
+
+// They are basically on and off switches
+// True is on
+// False is off
+
+
+
+//////////////////////////////////////////////
+// Use Conditional Logic with If Statements
+//////////////////////////////////////////////
+
+
+////////////////////
+// If Statements
+////////////////////
+
+function trueOrFalse(a) {
+    if (a) {
+        return "Yes it is True"
+    }
+    return "No, it is False"
+}
+
+console.log(trueOrFalse(true))
+
+
+
+////////////////////////////////////////////////
+// Comparison with the Equality Operator
+////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////
+// Comparison with the Strict Equality Operator
+////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////
+// Practice Comparing Different Values
+////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////
+// Comparison with the Inequality Operator
+////////////////////////////////////////////////
+
+
+
+
+
+
+//
+
+// let sumTest = 0  
+// function addFive() {
+//     return sumTest += 5
+// }
+
+// console.log(addFive())
+
+
+
+// console.log( 2!==2 )
