@@ -752,6 +752,13 @@ console.log(caseInSwitch2(3))
 ///////////////////////
 
 
+let jsObject = {
+    'name': 'Germano Kuerten',
+    'age': 34, 
+}
+
+console.log(jsObject.age)
+
 //////////////////////////////////////////////////
 // Accessing Object Properties with Dot Notation
 //////////////////////////////////////////////////
@@ -761,7 +768,12 @@ console.log(caseInSwitch2(3))
 // Accessing Object Properties with Bracket Notation
 //////////////////////////////////////////////////
 
+let testObject = {
+    'name': 'Joe',
+    'his age': 55,
+}
 
+console.log(testObject['his age'])
 
 
 //////////////////////////////////////////////////
