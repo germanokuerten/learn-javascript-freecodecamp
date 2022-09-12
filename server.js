@@ -751,6 +751,7 @@ console.log(caseInSwitch2(3))
 // Build JS Objects
 ///////////////////////
 
+// Ps. Objects can be seen as a key value storage, like a dictionary.
 
 let jsObject = {
     'name': 'Germano Kuerten',
@@ -784,12 +785,34 @@ console.log(testObject['his age'])
 
 
 
+//////////////////////////////////////////////////
+// Testing Objects for Properties
+//////////////////////////////////////////////////
+
+// hasOwnProperty()   a JS method
+
+var myObj = {
+    gift: "pony",
+    pet: "dog",
+    bed: "firm",
+}
+
+function checkObj(checkProp) {
+
+    if (myObj.hasOwnProperty(checkProp)) {
+        return myObj[checkProp]
+    } else {
+        return "not found"
+    }
+}
+
+console.log(checkObj("hello"))
 
 
 
-
-
-
+//////////////////////////////////////////////////
+// Testing Objects for Properties
+//////////////////////////////////////////////////
 
 
 
