@@ -811,16 +811,106 @@ console.log(checkObj("hello"))
 
 
 //////////////////////////////////////////////////
-// Testing Objects for Properties
+// Manipulating Complex Objects
 //////////////////////////////////////////////////
 
+let myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs",
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+}
+
+let gloveBoxContents = myStorage.car.inside["glove box"]
+
+console.log(gloveBoxContents)
 
 
+//////////////////////////////////////////////////
+// Accessing Nested Arrays
+//////////////////////////////////////////////////
+
+// Array bracket notation can be changed to access nested arrays.
+
+var myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion",
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "birch"
+        ]
+    }
+]
+
+let myPlantsValue = myPlants[1].list[0]
+
+console.log(myPlantsValue)
 
 
+//////////////////////////////////////////////////
+// Record Collection
+//////////////////////////////////////////////////
 
+let collection = {
+    "2548": {
+        "album": "Slippery When Wet",
+        "artist": "Bon Jovi",
+        "tracks": [
+            "Let it Rock",
+            "You Give Love a Bad Name"
+        ]
+    },
+    "2468": {
+        "album": "1999",
+        "artist": "Prince",
+        "tracks": [
+            "1999",
+            "Little Red Corvette"
+        ]
+    },
+    "1245": {
+        "artist": "Robert Palmer",
+        "tracks": []
+    },
+    "5439": {
+        "album": "ABBA Gold",
+        "artist": "Charlie Brown Jr"
+    }
+}
 
+// fancy way of creating a copy of the objects
+// let collectionCopy = JSON.parse(JSON.stringify(collection))
 
+function updateRecords (number, prop, value) {
+    if (value === "") {
+        collection[number][prop]
+    } else if (prop === "tracks") {
+        collection[number][prop] = collection[number][prop] || []
+        collection[number][prop].push(value)
+    } else {
+        collection[number][prop] = value
+    }
+    return collection
+}
+
+console.log(collection)
+
+updateRecords(5439, "artist", "Natiruts",)
+console.log(collection)
 
 
 
