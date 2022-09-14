@@ -932,10 +932,38 @@ while (i <= 5) {
     i++
 }
 
-
-
-
 console.log(myArray)
+
+//////////////////////////////////////////////////
+// For Loop
+//////////////////////////////////////////////////
+
+let ourArrayLoopEx = []
+
+for (let i = 0; i <= 5; i++) {
+    ourArrayLoopEx.push(i)
+}
+
+console.log(ourArrayLoopEx)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
