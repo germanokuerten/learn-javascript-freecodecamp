@@ -938,6 +938,8 @@ console.log(myArray)
 // For Loop
 //////////////////////////////////////////////////
 
+// ps. For loop is the most common type of loop in JS
+
 let ourArrayLoopEx = []
 
 for (let i = 0; i <= 5; i++) {
@@ -947,10 +949,29 @@ for (let i = 0; i <= 5; i++) {
 console.log(ourArrayLoopEx)
 
 
+//////////////////////////////////////////////////
+// Iterate Even and Odd Numbers with a For Loop
+//////////////////////////////////////////////////
 
+// Even
 
+let arrayEven = []
 
+for ( let i = 0; i <= 10; i += 2) {
+    arrayEven.push(i)
+}
 
+console.log(arrayEven);
+
+// Odd
+
+let arrayOdd = []
+
+for (let i = 1; i <= 10; i += 2) {
+    arrayOdd.push(i)
+}
+
+console.log(arrayOdd);
 
 
 
