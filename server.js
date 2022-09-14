@@ -913,6 +913,29 @@ updateRecords(5439, "artist", "Natiruts",)
 console.log(collection)
 
 
+/////////////////////////////////////////
+
+
+//////////////////////////////////////////////////
+// Iterate with While Loops
+//////////////////////////////////////////////////
+
+// Ps. Loops allow you to run the same code multiple times
+
+// ps. A while loop runs while a specified condition remains true (stops when it's no longer true)
+
+let myArray = []
+
+let i = 0
+while (i <= 5) {
+    myArray.push(i)
+    i++
+}
+
+
+
+
+console.log(myArray)
 
 
 
