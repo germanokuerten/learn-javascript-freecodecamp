@@ -988,6 +988,19 @@ for (let i = 10; i > 0; i--) {
 console.log(arrayBackwards)
 
 
+//////////////////////////////////////////////////
+// Iterate Through an Array with a For Loop
+//////////////////////////////////////////////////
+
+let ourArr = [ 1, 2, 3, 4, 5 ]
+let total = 0
+
+for (let i = 0; i < ourArr.length; i++) {
+    total += ourArr[i]
+}
+
+console.log(total)
+
 
 
 
