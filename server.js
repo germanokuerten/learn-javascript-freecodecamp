@@ -975,11 +975,17 @@ console.log(arrayOdd);
 
 
 
+//////////////////////////////////////////////////
+// Count Backwards with a For Loop
+//////////////////////////////////////////////////
 
+let arrayBackwards = []
+                        // or i -= 2
+for (let i = 10; i > 0; i--) {
+    arrayBackwards.push(i)
+}
 
-
-
-
+console.log(arrayBackwards)
 
 
 
