@@ -1007,7 +1007,7 @@ console.log(total)
 // Nesting for Loops
 //////////////////////////////////////////////////
 
-// Stay consistent
+// Stay consistent 2 
 
 
 
