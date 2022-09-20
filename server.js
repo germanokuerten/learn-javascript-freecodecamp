@@ -1007,12 +1007,22 @@ console.log(total)
 // Nesting for Loops
 //////////////////////////////////////////////////
 
-// Stay consistent 2 
+// Multi dimensional Array: An Array that has Arrays inside of it.
 
+function multiply2(arr) {
+    let product = 1
 
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++)
+        product *= arr[i][j]
+    }
+ 
+    return product;
+}
 
+let product2 = multiply2([[1, 2], [3, 4], [5, 6 ,7]])
 
-
+console.log("product is: " + product2)
 
 
 
