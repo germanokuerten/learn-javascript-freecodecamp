@@ -1009,25 +1009,55 @@ console.log(total)
 
 // Multi dimensional Array: An Array that has Arrays inside of it.
 
+// I am not so clear of how each step happens.
+
 function multiply2(arr) {
     let product = 1
 
     for (let i = 0; i < arr.length; i++) {
+        // console.log("i is: " + i)
+
         for (let j = 0; j < arr[i].length; j++)
+        
+
+        // console.log("j is: " + j)
         product *= arr[i][j]
     }
- 
+    
+    console.log(product)
     return product;
+   
 }
 
-let product2 = multiply2([[1, 2], [3, 4], [5, 6 ,7]])
+let product2 = multiply2([[1, 2, 10], [1, 1], [1, 1 ,1], [2]])
 
-console.log("product is: " + product2)
-
-
+console.log("final product is: " + product2)
 
 
+/////////////////////////////////////////////////
+// Iterate with Do... While Loops
+//////////////////////////////////////////////////
 
+// before with simple while loop.
+
+let myArrayTest1 = [];
+let y = 10;
+
+while (y < 10) {
+    myArrayTest1.push(y);
+    y++
+}
+
+console.log("while loop test: " + y, myArrayTest1)
+
+// with Do...
+
+do {
+    myArrayTest1.push(y)
+    y++
+} while (y < 10)
+
+console.log("while loop test: " + y, myArrayTest1)
 
 
 
