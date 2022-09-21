@@ -1078,10 +1078,20 @@ let contacts = [
     }
 ]
 
-function lookupProfile(name, prop) {
-    
+function lookupProfile(name, property) {
+    for (let i = 0; i < contacts.length; i++) {
+        let firstName = contacts[i].firstName.toLocaleLowerCase()
+        if (firstName === name.toLowerCase()) {
+            return contacts[i][property] || "No such property"
+         } 
+    }
+    return "No such contact"
+
 }
 
+let data2 = lookupProfile('germano', 'lastName')
+
+console.log(data2)
 
 /////////////////////////////////////////
 
