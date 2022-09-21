@@ -1065,7 +1065,22 @@ console.log("while loop test: " + y, myArrayTest1)
 //////////////////////////////////////////////////
 
 
+let contacts = [
+    {
+        'firstName': 'Germano',
+        'lastName': 'Kuerten',
+        'number': '12345'
+    },
+    {
+        'firstName': 'Andre',
+        'lastName': 'Kuerten',
+        'number': '123456'
+    }
+]
 
+function lookupProfile(name, prop) {
+    
+}
 
 
 /////////////////////////////////////////
