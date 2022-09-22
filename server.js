@@ -1130,12 +1130,16 @@ function randomWholeNum() {
 console.log(randomWholeNum())
 
 
+/////////////////////////////////////////////////
+// Generate Random Whole Numbers within a Range
+//////////////////////////////////////////////////
 
+function ourRandomRange(myMin, myMax) {
 
+    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin
+}
 
-
-
-
+console.log(ourRandomRange(1, 1000))
 
 
 
