@@ -1152,6 +1152,14 @@ console.log(ourRandomRange(1, 1000))
 // parseInt Function
 //////////////////////////////////////////////////
 
+// It takes a String and it returns an Integer
+
+function fromStringToInt(string) {
+    return parseInt(string)
+}
+
+console.log(fromStringToInt("35"))
+
 
 
 
