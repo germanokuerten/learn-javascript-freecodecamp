@@ -1189,11 +1189,23 @@ console.log(convertToInteger("10101011"))
 // condition ? statement-if-true : statement-if-false
 // (condition) ? (if true, do this) : (otherwise, do this)
 
-function checkEqual (a, b) {
-    return a + b === 2 ? true : false 
+function checkEqual (a, b, c) {
+    console.log("c is: " + c)
+    return a + b === c ? a + " and " + b + " is equal to " + c : a + " and " + b + " is not equal to " + c
 }
 
-console.log(checkEqual(1, 1))
+console.log(checkEqual(1, 1, 3))
+
+
+/////////////////////////////////////////////////
+// Use Multiple Conditional (Ternary) Operators
+//////////////////////////////////////////////////
+
+
+
+
+
+
 
 
 
