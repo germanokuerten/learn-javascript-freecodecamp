@@ -1208,6 +1208,42 @@ function checkSign(num) {
 console.log(checkSign(1))
 
 
+//////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////
+// Differences Between the var and let keywords
+//////////////////////////////////////////////////
+
+// var
+var catName = "Mano"
+var catName = "Andre"
+
+// let
+let dogName = "Mano"
+dogName = "Andre"
+
+console.log(catName)
+
+// "use strict"  // enables "strict mode", stricts so that you must use keyword to declare variable.
+function catTalk() {
+    "use strict"
+
+    catName = "Oliver"
+    quote = catName + " says Meow!"
+}
+
+catTalk()
+
+
+/////////////////////////////////////////////////
+// Compare Scopes of the var and let Keywords
+//////////////////////////////////////////////////
+
+
+
+
 
 
 
