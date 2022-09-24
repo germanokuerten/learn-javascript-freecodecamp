@@ -1161,9 +1161,39 @@ function fromStringToInt(string) {
 console.log(fromStringToInt("35"))
 
 
+/////////////////////////////////////////////////
+// parseInt Function with a Radix
+//////////////////////////////////////////////////
+
+// The radix specifies the base of the number in the string
+
+// Ex: base 2 would be binary
+
+function convertToInteger (str) {
+    return parseInt(str, 2)
+}
+
+console.log(convertToInteger("10101011"))
 
 
 
+
+//////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////
+// Use the Conditional (Ternary) Operator
+//////////////////////////////////////////////////
+
+// condition ? statement-if-true : statement-if-false
+// (condition) ? (if true, do this) : (otherwise, do this)
+
+function checkEqual (a, b) {
+    return a + b === 2 ? true : false 
+}
+
+console.log(checkEqual(1, 1))
 
 
 
