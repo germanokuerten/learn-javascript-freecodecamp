@@ -1201,7 +1201,11 @@ console.log(checkEqual(1, 1, 3))
 // Use Multiple Conditional (Ternary) Operators
 //////////////////////////////////////////////////
 
+function checkSign(num) {
+    return num < 0 ? 'negative' : num > 0 ? 'positive' : 'number is zero'
+}
 
+console.log(checkSign(1))
 
 
 
