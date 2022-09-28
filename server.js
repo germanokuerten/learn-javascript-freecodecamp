@@ -1290,11 +1290,42 @@ const s = [5, 7, 2]
 function editInPlace() {
     'use strict'
 
-    s = [2, 5, 7]
+    s[0] = 1
+    s[2] = 111
+    s[3] = 99
+    s[10] = 23
     console.log(s)
 }
 
+s[9] = 55
+
 editInPlace()
+
+
+///////////////////////////////////////////////////////
+// Prevent Object Mutation
+///////////////////////////////////////////////////////
+
+function freezeObj() {
+    'use strict';
+    const MATH_CONSTANTS = {
+        PI: 3.14
+    }
+
+    // Object.freeze() protects the variable object.
+    Object.freeze(MATH_CONSTANTS)
+
+    try {
+        MATH_CONSTANTS.PI = 99
+    } catch(ex) {
+        // console.log(ex)
+    }
+    return MATH_CONSTANTS.PI
+}
+
+const PI = freezeObj();
+
+console.log(PI);
 
 
 ///////////////////////////////////////////
