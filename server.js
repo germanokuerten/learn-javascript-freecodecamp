@@ -1328,6 +1328,27 @@ const PI = freezeObj();
 console.log(PI);
 
 
+///////////////////////////////////////////////////////
+// Use Arrow Functions for Concise Anonymous Functions
+///////////////////////////////////////////////////////
+
+// reg anonymous function, assigned to variable magic
+const magic = function() {
+    return new Date()
+}
+
+// reg arrow function
+const magic2 = () => {
+    return new Date()
+}
+
+// arrow function with implicit or implied return
+const magic3 = () => new Date()
+
+console.log(magic3())
+
+
+
 ///////////////////////////////////////////
 
 // Stay committed
