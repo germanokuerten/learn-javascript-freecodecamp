@@ -1282,7 +1282,19 @@ printManyTimes('Mano')
 // Mutate an Array Declared with const
 ///////////////////////////////////////////////////////
 
+// You cannot reassign a variable declared witha a const, but you can mutate an array.
+// You must do bracket notation in order to mutate.
 
+const s = [5, 7, 2]
+
+function editInPlace() {
+    'use strict'
+
+    s = [2, 5, 7]
+    console.log(s)
+}
+
+editInPlace()
 
 
 ///////////////////////////////////////////
