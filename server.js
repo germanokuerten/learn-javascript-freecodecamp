@@ -1231,7 +1231,7 @@ function catTalk() {
     "use strict"
 
     catName = "Oliver"
-    quote = catName + " says Meow!"
+    let quote = catName + " says Meow!"
 }
 
 catTalk()
@@ -1244,16 +1244,16 @@ catTalk()
 function checkScope() {
     "use strict"
 
-    var i = 'function scope'
+    let i = 'function scope'
     if (true) {
-        i = 'block scope'
+        let i = 'block scope'
         console.log('Block scope i is: ', i)
     }
     console.log('Function scope i is: ', i)
     return i
 }
 
-
+checkScope()
 
 
 
