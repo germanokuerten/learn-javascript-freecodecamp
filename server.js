@@ -1256,6 +1256,27 @@ function checkScope() {
 checkScope()
 
 
+///////////////////////////////////////////////////////
+// Declare a Read-Only Variable with the const Keyword
+///////////////////////////////////////////////////////
+
+// const is read only, you cannot re-asign a const.
+// it has all the features of let
+
+function printManyTimes(str) {
+    'use strict'
+
+    let sentence = str + ' is awesome!'
+    sentence = str + ' is cool!'
+
+    for (let i = 0; i < str.length; i++) {
+        console.log(sentence)
+    } 
+}
+
+printManyTimes('Manoooo')
+
+
 
 
 ///////////////////////////////////////////
