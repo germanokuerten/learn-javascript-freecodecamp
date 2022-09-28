@@ -1274,7 +1274,13 @@ function printManyTimes(str) {
     } 
 }
 
-printManyTimes('Manoooo')
+printManyTimes('Mano')
+
+
+
+///////////////////////////////////////////////////////
+// Mutate an Array Declared with const
+///////////////////////////////////////////////////////
 
 
 
