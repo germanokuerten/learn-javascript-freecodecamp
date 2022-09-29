@@ -1356,11 +1356,24 @@ var myConcat = function(arr1, arr2) {
     return arr1.concat(arr2)
 }
 
-const myConcat2 = (arr1, arr2) => {
-    return arr1.concat(arr2)
+const myConcat2 = (arr1, arr2, arr3, obj1) => arr1.concat(arr2, arr3, obj1)
+
+console.log(myConcat2([1, 2], [3, 4, 4], [10, 11], {I: 12}))
+
+
+///////////////////////////////////////////////////////
+// Write Higher Order Arrow Functions
+///////////////////////////////////////////////////////
+
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]
+
+const squareList = (arr) => {
+    const squaredIntegers = arr
+    return squaredIntegers
 }
 
-console.log(myConcat2([1, 2], [3, 4, 4]))
+const squaredIntegers = squareList(realNumberArray)
+console.log(squaredIntegers)
 
 
 
