@@ -1365,15 +1365,30 @@ console.log(myConcat2([1, 2], [3, 4, 4], [10, 11], {I: 12}))
 // Write Higher Order Arrow Functions
 ///////////////////////////////////////////////////////
 
-const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]
+// Arrow functions work really well with higher order functions such as map, filter, and reduce
+
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2, -3, -1000000, 0]
 
 const squareList = (arr) => {
-    const squaredIntegers = arr
+    const squaredIntegers = arr.filter(num => Number.isInteger(num) && num <= 0).map(x => x + 100).filter(num => num > 0).map(x => x * 2).map(x => x + 'Hi')
     return squaredIntegers
 }
 
 const squaredIntegers = squareList(realNumberArray)
 console.log(squaredIntegers)
+
+///////////////////////////////////////////////////////
+// Default Parameter
+///////////////////////////////////////////////////////
+
+const increment = (function() {
+    return function increment(number, value) {
+        return number + value
+    }
+})()
+
+console.log(increment(5, 2))
+console.log(increment(5))
 
 
 
