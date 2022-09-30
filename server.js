@@ -1390,21 +1390,39 @@ const increment = (function() {
 console.log(increment(5, 2))
 console.log(increment(5))
 
+
+
+///////////////////////////////////////////
+
+
 ///////////////////////////////////////////////////////
 // Use the Rest Operator with Function Parameters
 ///////////////////////////////////////////////////////
 
 const sum99 = (function() {
-    return function sum(x, y, z) {
-        const args = [x, y, z]
+    return function sum(...args) {
         return args.reduce((a, b) => a + b, 0)
     }
 })()
 
-console.log(sum99(1, 2, 3))
+console.log(sum99(1, 2, 3, 4))
 
 
+///////////////////////////////////////////////////////
+// Use the Spread Operator to Evaluate Arrays In-Place
+///////////////////////////////////////////////////////
 
+const arr123 = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
+let arr2
+
+let spreaOp = () => {
+    arr2 = [...arr123]
+    arr123[0] = 'potato'
+}
+spreaOp()
+
+console.log(arr123)
+console.log(arr2);
 
 ///////////////////////////////////////////
 
