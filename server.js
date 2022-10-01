@@ -1399,18 +1399,22 @@ console.log(increment(5))
 // Use the Rest Operator with Function Parameters
 ///////////////////////////////////////////////////////
 
+// REST OPERATOR
+
 const sum99 = (function() {
     return function sum(...args) {
         return args.reduce((a, b) => a + b, 0)
     }
 })()
 
-console.log(sum99(1, 2, 3, 4))
+console.log(sum99(1, 2, 3, 4, 1))
 
 
 ///////////////////////////////////////////////////////
 // Use the Spread Operator to Evaluate Arrays In-Place
 ///////////////////////////////////////////////////////
+
+// SPREAD OPERATOR
 
 const arr123 = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
 let arr2
@@ -1423,6 +1427,16 @@ spreaOp()
 
 console.log(arr123)
 console.log(arr2);
+
+
+//////////////////////////////////////////////////////////////////
+// Use Destructuring Assignment to Assign Variables from Objects
+//////////////////////////////////////////////////////////////////
+
+
+
+
+
 
 ///////////////////////////////////////////
 
