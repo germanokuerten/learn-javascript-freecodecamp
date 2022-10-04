@@ -1499,6 +1499,19 @@ console.log(getMinOfToday(LOCAL_FORECAST));
 // Use Destructuring Assignment to Assign Variables from Arrays
 //////////////////////////////////////////////////////////////////
 
+const [z2, x2, , y2] = [1, 2, 3, 4, 5, 6]
+console.log(z2, x2, y2);
+
+// 2nd example:
+
+let a3 = 8, b3 = 5
+
+function switchValues(){
+    [a3, b3] = [b3, a3]
+    return "a is: " + a3 + " and " + "b is: " + b3
+}
+
+console.log(switchValues())
 
 
 
