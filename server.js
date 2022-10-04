@@ -1435,13 +1435,16 @@ console.log(arr2);
 
 var voxel = {x1: 3.6,  y1: 7.4, z1: 6.54}
 
+// older way of doing it
 var x1 = voxel.x1   // x = 3.6  
 var y1 = voxel.y1   // y = 7.4
 var z = voxel.z1    // z = 6.54
 
+// newer way with destructuring
 const { x1 : a, y1 : b, z1 : c} = voxel // a = 3.6, b = 7.4, c = 6.54
 
 
+// 2nd example:
 
 const AVG_TEMPERATURES = {
     today: 77.5,
@@ -1452,11 +1455,16 @@ function getTempOfTomorrow(avgTemperatures) {
     'use strict'
 
     const tempOfTomorrow = undefined
+
+    return tempOfTomorrow
 }
 
+console.log(getTempOfTomorrow(AVG_TEMPERATURES))
 
 
-
+//////////////////////////////////////////////////////////////////
+// Destructuring Assignment with Nested Objects
+//////////////////////////////////////////////////////////////////
 
 
 
