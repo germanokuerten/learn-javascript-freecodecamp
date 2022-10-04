@@ -1514,6 +1514,28 @@ function switchValues(){
 console.log(switchValues())
 
 
+//////////////////////////////////////////////////////////////////
+// Use Destructuring Assignment with the Rest Operator
+//////////////////////////////////////////////////////////////////
+
+const sourceArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+function removeFirstTwo(list) {
+
+    const [a, b, ...arr] = list
+
+    return arr
+}
+
+const newArr1 = removeFirstTwo(sourceArr)
+console.log(sourceArr)
+console.log(newArr1)
+
+
+//////////////////////////////////////////////////////////////////
+// Use Destructuring Assignment to Pass an Object as a Function's Parameters
+//////////////////////////////////////////////////////////////////
+
 
 ///////////////////////////////////////////
 
