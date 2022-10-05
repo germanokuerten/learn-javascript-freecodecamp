@@ -1557,6 +1557,25 @@ console.log(half(stats))
 
 ///////////////////////////////////////////
 
+
+//////////////////////////////////////////////////////////////////
+// Create Strings using Template Literals
+//////////////////////////////////////////////////////////////////
+
+const person = {
+    name: 'Andre',
+    age: 28
+}
+
+// Template literal with multi-line and sting interpolation
+const greeting = `Hello, my name is ${person.name}! I am ${person.age}`
+
+console.log(greeting)
+
+///////////////////////////////////////////
+
+
+
 // Stay committed
 
 // let sumTest = 0  
