@@ -1572,6 +1572,12 @@ const greeting = `Hello, my name is ${person.name}! I am ${person.age}`
 
 console.log(greeting)
 
+
+// Coding challenge:
+
+
+
+
 ///////////////////////////////////////////
 
 
