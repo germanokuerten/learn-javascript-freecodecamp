@@ -1600,7 +1600,24 @@ function makeList(arr) {
     }
 
 console.log(makeList(result9.success))
- 
+
+
+//////////////////////////////////////////////////////////////////
+// Write Concise Object Literal Declarations Using Simple Fields
+//////////////////////////////////////////////////////////////////
+
+// ES6 added some nice support for easily defining object literals
+
+const createPerson = (name, age, gender) => {
+
+    return {
+        name: name,
+        age: age,
+        gender: gender
+    }
+}
+
+console.log(createPerson("Andre Kuerten", 28, 'male'))
 
 ///////////////////////////////////////////
 
