@@ -1575,8 +1575,32 @@ console.log(greeting)
 
 // Coding challenge:
 
+const result9 = {
+    success: ['max-length', 'no-amd', 'prefer-arrow-functions'],
+    failure: ['no-var', 'var-on-top', 'linebreak'],
+    skipped: ['id-blacklist', 'no-dup-keys'],
+}
 
+// function before modification:
 
+// function makeList(arr) {
+//     const resultDisplayArray = null
+
+//     return resultDisplayArray
+// }
+
+function makeList(arr) {
+        const resultDisplayArray = []
+        for (i = 0; i < arr.length; i++)
+        resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)
+
+        console.log("arr.length is: " + arr.length);
+        
+        return resultDisplayArray
+    }
+
+console.log(makeList(result9.success))
+ 
 
 ///////////////////////////////////////////
 
