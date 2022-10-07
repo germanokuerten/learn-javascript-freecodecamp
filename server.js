@@ -1609,7 +1609,6 @@ console.log(makeList(result9.success))
 // ES6 added some nice support for easily defining object literals
 
 const createPerson = (name, age, gender) => {
-
     return {
         name: name,
         age: age,
@@ -1617,9 +1616,25 @@ const createPerson = (name, age, gender) => {
     }
 }
 
-console.log(createPerson("Andre Kuerten", 28, 'male'))
+// more concise way of doing the above if key is the same name as the value.
+
+const createPerson2 = (name, age, gender) => ({ name, age, gender })
+
+console.log(createPerson2("Andre Kuerten", 28, 'male'))
+
+//
+
+const newPerson = createPerson2("Andre Kuerten", 28, 'male')
+
+console.log(newPerson);
 
 ///////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////
+// Write Concise Declarative Functions
+//////////////////////////////////////////////////////////////////
+
 
 
 
