@@ -1631,10 +1631,61 @@ console.log(newPerson);
 ///////////////////////////////////////////
 
 
-//////////////////////////////////////////////////////////////////
+/////////////////////////////////////////
 // Write Concise Declarative Functions
-//////////////////////////////////////////////////////////////////
+/////////////////////////////////////////
 
+// An object can contain a function
+
+const bicycle = {
+    gear: 2,
+    setGear: function(newGear) {
+        this.gear = newGear
+    }
+}
+
+bicycle.setGear(3)
+console.log(bicycle.gear);
+
+// More concise way of writing the above.
+
+const bicycle2 = {
+    gear: [3, 4],
+    setGear (newGear) {
+        this.gear = newGear
+    }
+}
+
+function getBikeStuff(arr) {
+    const bikeStuff = []
+    for (i = 0; i < arr.length; i++)
+    bikeStuff.push(arr[i])
+
+    console.log("bikeStuff, arr.length is: " + arr.length);
+
+    return bikeStuff
+}
+
+console.log(getBikeStuff(bicycle2.gear))
+
+bicycle2.setGear('4')
+console.log(bicycle2.gear);
+
+
+///////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////
+// Use class Syntax to Define a Constructor Function
+/////////////////////////////////////////////////////
+
+
+
+
+
+
+
+///////////////////////////////////////////
 
 
 
