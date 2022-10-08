@@ -1679,7 +1679,7 @@ console.log(bicycle2.gear);
 // Use class Syntax to Define a Constructor Function
 /////////////////////////////////////////////////////
 
-
+var SpaceShuttle
 
 
 
