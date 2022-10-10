@@ -1679,7 +1679,72 @@ console.log(bicycle2.gear);
 // Use class Syntax to Define a Constructor Function
 /////////////////////////////////////////////////////
 
-var SpaceShuttle
+// ES6 provides a syntax to create objects using the class keyword.
+
+// Here's the older way to create an object.
+var SpaceShuttle = function(targetPlanet) {
+    this.targetPlanet = targetPlanet
+}
+
+// Extantiate an object
+var zeus = new SpaceShuttle('Jupiter')
+
+console.log(zeus.targetPlanet)
+
+
+// new way
+class SpaceShuttle2 {
+    constructor(targetPlanet) {
+        this.targetPlanet = targetPlanet
+    }
+}
+
+// Example: vegetable class
+function makeClass() {
+    class Vegetable {
+        constructor(name) {
+            this.name = name
+        }
+    }
+    return Vegetable
+}
+
+const Vegetable = makeClass()
+const carrot = new Vegetable('aipo')
+console.log(carrot.name)
+
+// Example: car class
+
+class car {
+    constructor(model) {
+        this.model = model
+    }
+}
+
+var ford = new car('f150')
+console.log(ford.model);
+
+// Example: player
+
+class Player {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+}
+
+let player = new Player('Dudu', 23
+)
+console.log(player);
+
+
+
+///////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////
+// Use getters and setters to Control Access to an Object
+///////////////////////////////////////////////////////////
 
 
 
