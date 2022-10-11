@@ -1733,9 +1733,8 @@ class Player {
     }
 }
 
-let player = new Player('Dudu', 23
-)
-console.log(player);
+let player = new Player('Dudu', 23)
+console.log(player.name);
 
 
 
@@ -1746,7 +1745,57 @@ console.log(player);
 // Use getters and setters to Control Access to an Object
 ///////////////////////////////////////////////////////////
 
+// With the class object you often want to obtain values from the object, and set a value of a property within an object.
 
+// generally a variable starting with an underscore "_" means it's a private variable, and you are not supposed to access it outside of that scope or outside of that class.
+
+class book {
+    constructor(author){
+        this._author = author
+    }
+
+    // getter
+    get writer() {
+    return this._author
+}
+
+    // setter
+    set writer(updateAuthor){
+        this._author = updateAuthor
+    }
+}
+
+function makeClass() {
+    class Thermostat {
+        constructor(temp) {
+            this._temp = 5/9 * (temp - 32)
+        }
+        get temperature(){
+            return this._temp
+        }
+        set temperature(updatedTemp){
+            this._temp = updatedTemp
+        }
+    }
+    return Thermostat
+}
+
+
+const Thermostat = makeClass()
+const thermos = new Thermostat(76)
+let temp = thermos.temperature 
+thermos.temperature = 26
+temp = thermos.temperature
+
+
+
+
+///////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////
+// Understand the Difference between import and require.
+///////////////////////////////////////////////////////////
 
 
 
