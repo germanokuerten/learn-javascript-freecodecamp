@@ -1765,7 +1765,7 @@ class book {
     }
 }
 
-function makeClass() {
+function makeClass3() {
     class Thermostat {
         constructor(temp) {
             this._temp = 5/9 * (temp - 32)
@@ -1781,7 +1781,7 @@ function makeClass() {
 }
 
 
-const Thermostat = makeClass()
+const Thermostat = makeClass3()
 const thermos = new Thermostat(76)
 let temp = thermos.temperature 
 thermos.temperature = 26
@@ -1797,10 +1797,26 @@ temp = thermos.temperature
 // Understand the Difference between import and require.
 ///////////////////////////////////////////////////////////
 
+// the example below didn't work
+// import { capitalizeString } from "./string_function";
+// const capitalizeString = require('capitalizeString')
+//   "./" means current directory
+
+const capitalizeString = str => str.toUpperCase()
+const cap = capitalizeString('hello!')
+
+console.log(cap);
+
+
+
+///////////////////////////////////////////////////////////
+// Use export to Reuse a Code Block
+///////////////////////////////////////////////////////////
+
+// Stay consistent!
 
 
 ///////////////////////////////////////////
-
 
 
 // Stay committed
